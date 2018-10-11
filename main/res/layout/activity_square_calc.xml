@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".squareCalc">
+
+    <EditText
+        android:id="@+id/lengthInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/widthInput"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="215dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Length"
+        tools:layout_editor_absoluteX="84dp"
+        tools:layout_editor_absoluteY="214dp" />
+
+    <EditText
+        android:id="@+id/widthInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="-126dp"
+        android:layout_marginTop="187dp"
+        android:layout_toEndOf="@+id/areaDisplay"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Width"
+        tools:layout_editor_absoluteX="84dp"
+        tools:layout_editor_absoluteY="300dp" />
+
+    <TextView
+        android:id="@+id/areaDisplay"
+        android:layout_width="106dp"
+        android:layout_height="69dp"
+
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="125dp"
+        android:layout_marginBottom="122dp"
+        android:text="Area"
+        android:textSize="30sp" />
+
+    <ImageButton
+        android:id="@+id/squareImage"
+        android:layout_width="104dp"
+        android:layout_height="97dp"
+        android:layout_alignStart="@+id/areaDisplay"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="49dp"
+        app:srcCompat="@drawable/square" />
+
+    <Button
+        android:id="@+id/calc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="41dp"
+        android:onClick="areacalc"
+        android:text="Calculate" />
+
+</RelativeLayout>

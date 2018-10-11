@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".triCalc">
+
+    <EditText
+        android:id="@+id/heightInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/baseInput"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="221dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Height"
+        tools:layout_editor_absoluteX="97dp"
+        tools:layout_editor_absoluteY="177dp" />
+
+    <EditText
+        android:id="@+id/baseInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="164dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Base"
+        tools:layout_editor_absoluteX="97dp"
+        tools:layout_editor_absoluteY="277dp" />
+
+    <TextView
+        android:id="@+id/areaDisplay"
+        android:layout_width="137dp"
+        android:layout_height="52dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="112dp"
+        android:text="Area"
+        android:textSize="30sp"
+        tools:layout_editor_absoluteX="139dp"
+        tools:layout_editor_absoluteY="398dp" />
+
+    <ImageButton
+        android:id="@+id/triangleImage"
+        android:layout_width="98dp"
+        android:layout_height="74dp"
+        android:layout_alignEnd="@+id/areaDisplay"
+        android:layout_alignBottom="@+id/circleImage"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="2dp"
+        app:srcCompat="@drawable/triangle" />
+
+    <Button
+        android:id="@+id/calc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="54dp"
+        android:onClick="areacalc"
+        android:text="Calculate" />
+</RelativeLayout>
